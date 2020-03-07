@@ -3,6 +3,7 @@ package com.example.leandro3710;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.Image;
 import android.os.Bundle;
@@ -62,5 +63,11 @@ public class MainActivity extends AppCompatActivity {
         alert.setMessage("Nome: " + tv1.getText() + "\nSenha: " + tv2.getText());
         alert.setPositiveButton("OK", null);
         alert.show();
+    }
+    public void func (View v) {
+        Intent i = new Intent(
+                MainActivity.this, Main2Activity.class
+        );
+        startActivity(i);
     }
 }
