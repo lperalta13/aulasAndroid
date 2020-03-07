@@ -20,7 +20,7 @@ public class Main3Activity extends AppCompatActivity {
         c1 = findViewById(R.id.checkBox);
         c2 = findViewById(R.id.checkBox2);
         c3 = findViewById(R.id.checkBox3);
-    }
+    } //testando
 
     public void func_check (View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
